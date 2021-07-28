@@ -4,6 +4,7 @@ from load_data import load_cases, get_dataset_params, get_training_cases
 from query_selector.model import Transformer
 import numpy as np
 from tqdm import tqdm
+from pathlib import Path
 import torch
 from torch.optim import Adam
 from torch.utils.data import Dataset, DataLoader
@@ -78,4 +79,5 @@ for it in tqdm(range(args.cls_iterations)):
         m.optim.step()
         dst.set_description("IT: {}, CrossEntropy: {}, accuracy: {}, cases: {}".format(it + 1, loss.item(), hits / tests, tests))
 
+Path("models").mkdir(exist_ok=True)
 torch.save(m.state_dict(), "models/train_checkpoint.pt")
