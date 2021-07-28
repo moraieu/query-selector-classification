@@ -1,6 +1,6 @@
 from argparse import Namespace
 
-from code.load_data import load_cases, get_dataset_params, get_training_cases
+from load_data import load_cases, get_dataset_params, get_training_cases
 from query_selector.model import Transformer
 import numpy as np
 from tqdm import tqdm

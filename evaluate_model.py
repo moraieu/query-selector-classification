@@ -3,7 +3,7 @@ from argparse import Namespace
 import numpy as np
 import torch
 from query_selector.model import Transformer
-from code.load_data import load_cases, valid_cases_generator, get_dataset_params
+from load_data import load_cases, valid_cases_generator, get_dataset_params
 from config import get_arg_parser
 from model_and_datasets import encode_helpdesk, encode_bpi, build_model
 args = get_arg_parser().parse_args()
