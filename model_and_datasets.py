@@ -3,7 +3,7 @@ from argparse import Namespace
 import numpy as np
 from torch.utils.data import Dataset
 import torch
-from code.load_data import load_cases, get_dataset_params, get_training_cases
+from load_data import load_cases, get_dataset_params, get_training_cases
 from query_selector.model import Transformer
 
 additional_fields = 28 + 1 + 15
