@@ -3,7 +3,7 @@ This project uses Query Selector layer described in https://arxiv.org/abs/2107.0
 
 
 # Installation
-Run `git submodule init`. Other requirements are such as in original project https://github.com/moraieu/query-selector
+Requirements are such as in original project https://github.com/moraieu/query-selector
 
 # Results
 
