@@ -1,0 +1,3 @@
+[submodule "query_selector"]
+	path = query_selector
+	url = https://github.com/moraieu/query-selector
